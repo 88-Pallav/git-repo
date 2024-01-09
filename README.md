@@ -8,14 +8,11 @@ git status
 So track a file we can do: 
 git add "File_name"
 
+Note: First save the file and then proceed for commit
+
 To ensure git keeps track of all the files in a repo:
 git add .   // When you use "." then it keeps track of all the files automatically 
                otherwise you have to mention mofdified File name everytime.
-
-
-
-
-
 
 To commit something new:
 git commit -m "Title Description" -m "Detailed discription"
@@ -29,5 +26,12 @@ git push -u origin master
 Note: When you create a repo using GUI the above command changes from master to main:
       git push origin main
 
+
+Summary: 
+a. Make the changes
+b. Save the changes
+c. add the changes (git add .)
+d. commit the changes (git commit)
+e. push the changed (git push)
 
 
