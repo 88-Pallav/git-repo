@@ -60,6 +60,14 @@ git checkout "branch_name"          // '*' marks the current branch
 To compare difference between two branches:
 git diff "branch_name"              // You have to be in on the other branch eg. master for this one
 
+To delete a branch:
+git branch -d branch_name           // To create: git checkout -b "new branch_name"
+                                       To delete: git branch -d branch_name
+
+// To merge just create a pull request and then go on to confirm it on GUI
+
+// After pull request completes type: git pull (To merge the branches)
+
 
 
 
