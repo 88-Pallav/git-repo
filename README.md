@@ -47,4 +47,8 @@ c. add the changes (git add .)
 d. commit the changes (git commit)
 e. push the changed (git push)
 
+To check the brranches in repo: 
+git branch
 
+To add a branch to a repo:
+git checkout -b "branch_name"       // Eg. feature-readme-instructions
