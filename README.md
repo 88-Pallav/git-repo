@@ -15,6 +15,6 @@ To make upload default we can do:
 git push -u origin master 
 
 Note: When you create a repo using GUI the above command changes from master to main:
-git push origin main
+      git push origin main
 
 
