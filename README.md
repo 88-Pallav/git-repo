@@ -57,6 +57,8 @@ git checkout -b "branch_name"       // Eg. feature-readme-instructions
 To jump to the other branch:
 git checkout "branch_name"          // '*' marks the current branch
 
+To compare difference between two branches:
+git diff "branch_name"              // You have to be in on the other branch eg. master for this one
 
 
 
