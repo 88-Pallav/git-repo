@@ -1,6 +1,17 @@
 # Header
 
-Some text in the new repository created.
+To add a file locally created to git:
+git init  // This initialises the empty git repository but to push this live 
+             you need to create an empty repository on github
+
+To add this we use remote command:
+git remote add orgin "github_https/ssh_link"    // This is done so that we can push changes to origin 
+                                                   (It would not recognize origin otherwise)
+
+To check if all is ok run:
+git remote -v       // This shows any remote directories connected to this repo
+                       (Now we can freely use git pusg origin master/main)
+
 
 To check the status/track of all the files created adn deleted in a repo: 
 git status
@@ -20,8 +31,10 @@ git commit -m "Title Description" -m "Detailed discription"
 To upload the changes on github:
 git push origin master
 
-To make upload default we can do:
-git push -u origin master 
+To avoid writing the whole thing (git push origin master) we can do:
+git push -u origin master       // "-u" is for upstream
+                                   (After this can we can use 'git push' only we need not mention origin master)
+
 
 Note: When you create a repo using GUI the above command changes from master to main:
       git push origin main
