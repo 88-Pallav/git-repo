@@ -48,13 +48,14 @@ c. add the changes (git add .)
 d. commit the changes (git commit)
 e. push the changed (git push)
 
-To check branch of repo:
-git branch        // '*' represents current branch
+To check the branches in repo: 
+git branch
 
-To switch between branches:
-git checkout -b "branch_name_version"     // We are using using feature-readme-instruction
+To add a branch to a repo:
+git checkout -b "branch_name"       // Eg. feature-readme-instructions
 
-Note: Tab can be used for auto-complete by entering just entering last of first few letters like fea or ins
+To jump to the other branch:
+git checkout "branch_name"          // '*' marks the current branch
 
 
 
