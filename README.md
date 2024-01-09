@@ -86,6 +86,9 @@ git log
 // To undo a particular commit copy the hash of the commit:
 git reset commit_hash
 
+To remove all the changes:
+git reset --hard commit_hash
+
 
 
 
