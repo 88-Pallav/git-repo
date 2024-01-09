@@ -86,6 +86,13 @@ git log
 // To undo a particular commit copy the hash of the commit:
 git reset commit_hash
 
+To remove all the changes:
+git reset --hard commit_hash
+
+-------------- Forking ----------------
+To completly 'copy' a repo genrally other's repo. It is done to:
+a. To create a pull request to be able to contribute changes to the repo
+b. To create a branch and do as needed  
 
 
 
