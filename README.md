@@ -68,6 +68,27 @@ git branch -d branch_name           // To create: git checkout -b "new branch_na
 
 // After pull request completes type: git pull (To merge the branches)
 
+To add and commit together:
+git commit -am "Message"
+
+Merge Conflict 00:47:00 onwards
+
+Undoing add (Undoing staging): 
+git reset file_name
+
+Undoing commit:
+git reset HEAD~1
+// ~1 means going one commit behind and stages last changes 
+
+To see log of all the commits:
+git log
+
+// To undo a particular commit copy the hash of the commit:
+git reset commit_hash
+
+
+
+
 
 
 
