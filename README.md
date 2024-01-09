@@ -33,7 +33,8 @@ git push origin master
 
 To avoid writing the whole thing (git push origin master) we can do:
 git push -u origin master       // "-u" is for upstream
-                                   (After this can we can use 'git push' only we need not mention origin master)
+                                   (After this can we can use 'git push' only we need not
+                                   use mention 'git psuh origin master')
 
 
 Note: When you create a repo using GUI the above command changes from master to main:
@@ -46,5 +47,18 @@ b. Save the changes
 c. add the changes (git add .)
 d. commit the changes (git commit)
 e. push the changed (git push)
+
+To check branch of repo:
+git branch        // '*' represents current branch
+
+To switch between branches:
+git checkout -b "branch_name_version"     // We are using using feature-readme-instruction
+
+Note: Tab can be used for auto-complete by entering just entering last of first few letters like fea or ins
+
+
+
+
+
 
 
