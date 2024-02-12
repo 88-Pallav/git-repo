@@ -1,19 +1,18 @@
 # Header
 
 To add a file locally created to git:
-git init  // This initialises the empty git repository but to push this live 
-             you need to create an empty repository on github
+git init          // This initialises the empty git repository but to push this live 
+                     you need to create an empty repository on github
 
 To add this we use remote command:
-git remote add orgin "github_https/ssh_link"    // This is done so that we can push changes to origin 
+git remote add origin "github_https/ssh_link"    // This is done so that we can push changes to origin 
                                                    (It would not recognize origin otherwise)
 
 To check if all is ok run:
 git remote -v       // This shows any remote directories connected to this repo
-                       (Now we can freely use git pusg origin master/main)
+                       (Now we can freely use git push origin master/main)
 
-
-To check the status/track of all the files created adn deleted in a repo: 
+To check the status/track of all the files created and deleted in a repo: 
 git status
 
 So track a file we can do: 
@@ -52,7 +51,7 @@ To check the branches in repo:
 git branch
 
 To add a branch to a repo:
-git checkout -b "branch_name"       // Eg. feature-readme-instructions
+git checkout -b "branch_name"       // Eg. git checkout - b feature-readme-instructions
 
 To jump to the other branch:
 git checkout "branch_name"          // '*' marks the current branch
@@ -69,7 +68,7 @@ git branch -d branch_name           // To create: git checkout -b "new branch_na
 // After pull request completes type: git pull (To merge the branches)
 
 To add and commit together:
-git commit -am "Message"
+git commit -am "Message"            // Only applicable to modified files and not to new files 
 
 Merge Conflict 00:47:00 onwards
 
@@ -89,20 +88,9 @@ git reset commit_hash
 To remove all the changes:
 git reset --hard commit_hash
 
-To remove all the changes:
-git reset --hard commit_hash
-
 -------------- Forking ----------------
-To completly 'copy' a repo genrally other's repo. It is done to:
+To completly 'copy' a repo generally other's repo. It is done to:
 a. To create a pull request to be able to contribute changes to the repo
-b. To create a branch and do as needed  
-
-
-
-
-
-
-
-
+b. To create a branch and do as needed          
 
 
