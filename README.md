@@ -69,28 +69,29 @@ c. add the changes (git add .)
 d. commit the changes (git commit)
 e. push the changed (git push)
 
+
 To check the branches in repo: 
 git branch
 
 To add a branch to a repo:
-git checkout -b "branch_name"       // Eg. git checkout - b feature-readme-instructions
+git checkout -b "branch_name"    // Eg. git checkout - b feature-readme-instructions
 
 To jump to the other branch:
-git checkout "branch_name"          // '*' marks the current branch
+git checkout "branch_name"       // '*' marks the current branch
 
 To compare difference between two branches:
-git diff "branch_name"              // You have to be in on the other branch eg. master for this one
+git diff "branch_name"      // You have to be in on the other branch eg. master for this one
 
 To delete a branch:
-git branch -d branch_name           // To create: git checkout -b "new branch_name"
-                                       To delete: git branch -d branch_name
+git branch -d branch_name     // To create: git checkout -b "new branch_name"
+                                 To delete: git branch -d branch_name
 
 // To merge just create a pull request and then go on to confirm it on GUI
 
 // After pull request completes type: git pull (To merge the branches)
 
 To add and commit together:
-git commit -am "Message"            // Only applicable to modified files and not to new files 
+git commit -am "Message"    // Only applicable to modified files and not to new files 
 
 Merge Conflict 00:47:00 onwards
 
@@ -98,7 +99,7 @@ Undoing add (Undoing staging):
 git reset file_name
 
 Undoing commit:
-git reset HEAD~1
+git reset HEAD~1 
 // ~1 means going one commit behind and stages last changes 
 
 To see log of all the commits:
