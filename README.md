@@ -9,28 +9,27 @@ Step 5: Get into the folder by using: cd folder_name_created_on_github
 Step 6: Start using the same.     
 
 
-*To check the status/track of all the files created and deleted in a repo* 
+*To check the status/track of all the files created and deleted in a repo:* 
 git status
 
-*So track a file we can do, track is for files created on local machine but not on github* 
+*So track a file we can do, track is for files created on local machine but not on github:* 
 git add "File_name"
 
 Note: First save the file and then proceed for commit
 
-*To ensure git keeps track of all the files in a repo*
+*To ensure git keeps track of all the files in a repo:*
 git add .   // When you use "." then it keeps track of all the files automatically 
                otherwise you have to mention mofdified File name everytime.
 
-*To commit something new*
+*To commit something new:*
 git commit -m "Title Description" -m "Detailed discription"
 
-*To upload the changes on github*
+*To upload the changes on github:*
 git push origin master
 
-*To avoid writing the whole thing (git push origin master) we can do*
+*To avoid writing the whole thing (git push origin master) we can do:*
 git push -u origin master       // "-u" is for upstream
-                                   (After this can we can use 'git push' only we need not
-                                   use mention 'git psuh origin master')
+                                   (After this can we can use 'git push' only we need not use mention 'git push origin master')
                 
 Note: When you create a repo using GUI the above command changes from master to main:
       git push origin main
@@ -49,15 +48,15 @@ Step 9: To check the connection: git remote -v
 Step 10: To push the changes we need to do: git push -u origin master
 
 
-*To add a file locally created to git*
+*To add a file locally created to git:*
 git init          // This initialises the empty git repository but to push this live 
                      you need to create an empty repository on github
 
-*To add this we use remote command*
+*To add this we use remote command:*
 git remote add origin "github_https/ssh_link"    
 // This is done so that we can push changes to origin (It would not recognize origin otherwise)
 
-*To check if all is ok run*
+*To check if all is ok run:*
 git remote -v       // This shows any remote directories connected to this repo
                        (Now we can freely use git push origin master/main)
 
@@ -72,41 +71,41 @@ e. push the changed (git push)
 
 ******************* Branching **************************
 
-*To check the branches in repo* 
+*To check the branches in repo:* 
 git branch
 
-*To add a branch to a repo*
+*To add a branch to a repo:*
 git checkout -b "branch_name"    // Eg. git checkout - b feature-readme-instructions
 
-*To jump to the other branch*
+*To jump to the other branch:*
 git checkout "branch_name"       // '*' marks the current branch
 
-*To compare difference between two branches*
+*To compare difference between two branches:*
 git diff "branch_name"     // You have to be in on the other branch eg. master for this one
 
-*To delete a branch*
+*To delete a branch:*
 git branch -d branch_name     // To create: git checkout -b "new branch_name"
                                  To delete: git branch -d branch_name
 
-*To merge just create a pull request and then go on to confirm it on GUI. After pull request completes type* 
+*To merge just create a pull request and then go on to confirm it on GUI. After pull request completes type:* 
 git pull (To merge the branches)
 
-*To add and commit together*
+*To add and commit together:*
 git commit -am "Message"    // Only applicable to modified files and not to new files 
 
-*Undoing add (Undoing staging)* 
+*Undoing add (Undoing staging):* 
 git reset file_name
 
-*Undoing commit*
+*Undoing commit:*
 git reset HEAD~1  // ~1 means going one commit behind and stages last changes 
 
-*To see log of all the commits*
+*To see log of all the commits:*
 git log
 
-*To undo a particular commit copy the hash of the commit*
+*To undo a particular commit copy the hash of the commit:*
 git reset commit_hash
 
-*To remove all the changes*
+*To remove all the changes:*
 git reset --hard commit_hash
 
 -------------- Forking ----------------
