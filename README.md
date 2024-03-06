@@ -6,7 +6,7 @@ git init          // This initialises the empty git repository but to push this 
 
 To add this we use remote command:
 git remote add origin "github_https/ssh_link"    // This is done so that we can push changes to origin 
-                                                   (It would not recognize origin otherwise)
+                                                    (It would not recognize origin otherwise)
 
 To check if all is ok run:
 git remote -v       // This shows any remote directories connected to this repo
