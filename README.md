@@ -1,21 +1,18 @@
 # Header
 
-To add a file locally created to git:
-git init          // This initialises the empty git repository but to push this live 
-                     you need to create an empty repository on github
+How to bring a repository on Github to a local Machine?
+Step 1: Create an empty repository on Github.
+Step 2: In VS Code got to terminal
+Step 3: Open a folder where you want the repository to be cloned.
+Step 4: Then in terminal use the command: git clone SSH_key_of_the_repository
+Step 5: Get into the folder by using: cd folder_name_created_on_github
+Step 6: Start using the same.     
 
-To add this we use remote command:
-git remote add origin "github_https/ssh_link"    // This is done so that we can push changes to origin 
-                                                    (It would not recognize origin otherwise)
-
-To check if all is ok run:
-git remote -v       // This shows any remote directories connected to this repo
-                       (Now we can freely use git push origin master/main)
 
 To check the status/track of all the files created and deleted in a repo: 
 git status
 
-So track a file we can do: 
+So track a file we can do, track is for files created on local machine but not on github: 
 git add "File_name"
 
 Note: First save the file and then proceed for commit
@@ -34,10 +31,35 @@ To avoid writing the whole thing (git push origin master) we can do:
 git push -u origin master       // "-u" is for upstream
                                    (After this can we can use 'git push' only we need not
                                    use mention 'git psuh origin master')
-
-
+                
 Note: When you create a repo using GUI the above command changes from master to main:
       git push origin main
+
+
+How to create a file on local machine and connect it to Github ? 
+Step 1: Create a file in a folder in your local machine.
+Step 2: Move into that folder using cd
+Step 3: Create a file in that fodler
+Step 4: Then use the command: git init  // To initialize the git repository in the folder
+Step 5: Then check with command: git status 
+Step 6: Add the same the using command: git add
+Step 7: To push it live: first create an empty repository on GitHub
+Step 8: To connect use command: git remote add origin ssh-key
+Step 9: To check the connection: git remote -v
+Step 10: To push the changes we need to do: git push -u origin master
+
+
+To add a file locally created to git:
+git init          // This initialises the empty git repository but to push this live 
+                     you need to create an empty repository on github
+
+To add this we use remote command:
+git remote add origin "github_https/ssh_link"    // This is done so that we can push changes to origin 
+                                                    (It would not recognize origin otherwise)
+
+To check if all is ok run:
+git remote -v       // This shows any remote directories connected to this repo
+                       (Now we can freely use git push origin master/main)
 
 
 Summary: 
